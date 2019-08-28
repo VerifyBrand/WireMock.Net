@@ -14,7 +14,7 @@
     <SonarQubeTestProject>True</SonarQubeTestProject>
     <SonarQubeExclude>True</SonarQubeExclude>
 
-    <SignAssembly>true</SignAssembly>
+    <SignAssembly>false</SignAssembly>
     <AssemblyOriginatorKeyFile>../../src/WireMock.Net/WireMock.Net.snk</AssemblyOriginatorKeyFile>
     <!--<DelaySign>true</DelaySign>-->
     <PublicSign Condition=" '$(OS)' != 'Windows_NT' ">true</PublicSign>
