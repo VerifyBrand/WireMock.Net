@@ -37,5 +37,7 @@ namespace WireMock.RequestBuilders
         /// <param name="funcs">The path funcs.</param>
         /// <returns>The <see cref="IRequestBuilder"/>.</returns>
         IRequestBuilder WithClientIP([NotNull] params Func<string, bool>[] funcs);
+
+        IRequestBuilder WithMappingGuid(MatchBehaviour matchBehaviour, Guid matchingGuid);
     }
 }

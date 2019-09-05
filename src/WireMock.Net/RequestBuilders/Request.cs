@@ -86,6 +86,12 @@ namespace WireMock.RequestBuilders
             return this;
         }
 
+        public IRequestBuilder WithMappingGuid(MatchBehaviour matchBehaviour, Guid matchingGuid)
+        {
+            _requestMatchers.Add(new RequestMessageMappingGuidMatcher(matchBehaviour, matchingGuid));
+            return this;
+        }
+
         /// <inheritdoc cref="IUrlAndPathRequestBuilder.WithPath(IStringMatcher[])"/>
         public IRequestBuilder WithPath(params IStringMatcher[] matchers)
         {
